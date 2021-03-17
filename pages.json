@@ -1,0 +1,44 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		// pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#696768",
+		"selectedColor": "#fc4e43",
+		"backgroundColor": "#ffffff",
+		// 图标大小建议 81*81
+		"list": [{
+				"iconPath": "/static/images/home.png",
+				"selectedIconPath": "/static/images/home-active.png",
+				"pagePath": "pages/index",
+				"text": "首页"
+			},
+			{
+				"iconPath": "/static/images/auction.png",
+				"selectedIconPath": "/static/images/auction-active.png",
+				"pagePath": "pages/index",
+				"text": "订单"
+			},
+			{
+				"iconPath": "/static/images/my.png",
+				"selectedIconPath": "/static/images/my-active.png",
+				"pagePath": "pages/index",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
